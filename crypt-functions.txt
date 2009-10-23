@@ -1,0 +1,7 @@
+function oecrypt() {
+echo -e "$1" | openssl enc -aes128 -a -pass pass:your-predefined-key-string-here
+}
+
+function odcrypt() {
+echo -e "$1" | openssl enc -d -aes128 -a -pass pass:your-predefined-key-string-here
+}
